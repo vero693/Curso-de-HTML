@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Responsive</title>
+</head>
+<body>
+    <img src="img/mountain-400.jpg" alt="Imagen" srcset="img/mountain-400.jpg 400w,
+    img/beach-800.jpg 800w, img/lighthouse-1200 1200w" sizes="(max-width: 600px) 100vw, 50vw">
+    <picture>
+        <source media="(min-width: 768px)" srcset="img/forest2-800x400.jpg">
+        <source media="(min-width: 480px)" srcset="img/forest-600x300.jpg">
+        <img src="img/woods-400x200.jpg" alt="Bosque">
+    </picture>
+    <img src="img/rail-600.jpg" alt="Puente" srcset="img/bridge-300.jpg, img/rail-600.jpg"
+    sizes="(max-width: 600px) 100vw, 600px" loading="lazy" decoding="async" width="600" height="400">
+</body>
+</html>
