@@ -7,9 +7,12 @@
 body {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #333;
     background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -20,49 +23,70 @@ h4 {
     line-height: 1.2;
     margin-bottom: 16px;
     color: #1a1a1a;
+    letter-spacing: -0.02em;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 28px;
-    margin-top: 48px;
+    font-size: 2.25rem;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
 }
 
 h3 {
-    font-size: 24px;
-    margin-top: 32px;
+    font-size: 1.75rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 18px;
-    margin-top: 24px;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 p {
-    margin-bottom: 16px;
+    margin-bottom: 1.25rem;
+    max-width: 100%;
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 600;
     color: #000000;
+}
+
+em {
+    font-style: italic;
+}
+
+.about__intro,
+.hero__container {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #555;
 }
 
 a {
     color: #dd4eca;
     text-decoration: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
 a:hover {
     color: #f95ee4cc;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 a:active {
     color: #dd4eca8a;
-    font-weight: bold;
 }
 
 ul {
@@ -89,11 +113,17 @@ ul {
 .header__name {
     color: #1a1a1a;
     margin-bottom: 8px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
 }
 
 .header__tagline {
     color: #666;
-    margin-bottom: 8px;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .nav {
@@ -113,6 +143,17 @@ ul {
     padding: 8px 12px;
     display: inline-block;
     font-weight: 500;
+    font-size: 0.9375rem;
+    letter-spacing: 0.01em;
+}
+
+.nav__link:hover {
+    text-decoration: none;
+}
+
+.nav__link:active {
+    color: #dd4eca8a;
+    font-weight: 600;
 }
 
 .main {
@@ -135,29 +176,34 @@ ul {
 }
 
 .hero__title {
-    font-size: 48px;
+    font-size: 3.5rem;
     color: #1a1a1a;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
 }
 
 .hero__subtitle {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #dd4eca;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
-.hero__descripction {
-    font-size: 18px;
+.hero__description {
+    font-size: 1.125rem;;
     color: #666;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.8;
 }
 
 .hero__actions {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .hero__stats {
@@ -172,26 +218,32 @@ ul {
 
 .stat__number {
     display: block;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #dd4eca;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
 }
 
 .stat__label {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
 }
 
 .button {
     display: inline-block;
     padding: 12px 24px;
     margin: 8px;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
     border: 2px solid transparent;
     cursor: pointer;
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 
 .button--primary {
@@ -219,7 +271,7 @@ ul {
 
 .button--large {
     padding: 16px 32px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .about {
@@ -234,49 +286,56 @@ ul {
 .about__title {
     text-align: center;
     color: #1a1a1a;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .about__intro {
-    font-size: 20px;
+    font-size: 1.125rem;
     text-align: center;
     color: #333;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-weight: 400;
 }
 
 .about__text {
     color: #666;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    line-height: 1.8;
 }
 
 .quote {
     background-color: #f8f9fa;
-    padding: 24px;
-    margin: 32px 0;
+    padding: 2rem;
+    margin: 2.5rem 0;
     border-left: 4px solid #f95ee4cc;
 }
 
 .quote__text {
-    font-size: 18px;
+    font-size: 1.25rem;
     font-style: italic;
     color: #333;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
 }
 
 .quote__author {
     color: #666;
-    font-size: 14px;
+    font-size: 0.875rem;
     display: block;
     text-align: right;
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
 
 .values {
-    margin-top: 48px;
+    margin-top: 3rem;
 }
 
 .values__title {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .values__list {
@@ -284,10 +343,11 @@ ul {
 }
 
 .values__item {
-    padding: 16px;
-    margin-bottom: 16px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
     background-color: #f8f9fa;
     border: 1px solid #e0e0e0;
+    line-height: 1.6;
 }
 
 .values__item:hover {
@@ -296,16 +356,19 @@ ul {
 }
 
 .values__icon {
-    font-size: 24px;
-    margin-right: 12px;
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
 }
 
 .values__item strong {
-    margin-right: 8px;
+    margin-right: 0.5rem;
+    font-weight: 600;
+    font-size: 1.0625rem;
 }
 
 .values__item span {
     color: #666;
+    font-size: 0.9375rem;
 }
 
 .projects {
@@ -320,16 +383,18 @@ ul {
 
 .projects__title {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .projects__description {
     text-align: center;
     color: #666;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.0625rem;
+    line-height: 1.7;
 }
 
 .projects__grid {
@@ -338,8 +403,8 @@ ul {
 
 .project {
     background-color: #fff;
-    padding: 32px;
-    margin-bottom: 32px;
+    padding: 2rem;
+    margin-bottom: 2remx;
     border: 1px solid #e0e0e0;
 }
 
@@ -355,53 +420,59 @@ ul {
 .project__badge {
     background-color: #dd4eca;
     color: #fff;
-    padding: 4px 12px;
-    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
 }
 
 .project__title {
     color: #1a1a1a;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .project__description {
     color: #666;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
 }
 
 .project__subtitle {
-    font-size: 16px;
+    font-size: 1.0625rem;
     color: #333;
-    margin-top: 24px;
-    margin-bottom: 12px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 .project__learnings {
     list-style: disc;
-    padding-left: 24px;
-    margin-bottom: 24px;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .project__learnings li {
     color: #666;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
 .project__tecnologies {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
     display: inline-block;
     background-color: #fee0fb;
     color: #d49ed1e8;
-    padding: 4px 12px;
-    margin-right: 8px;
-    font-size: 14px;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
     font-weight: 600;
+    letter-spacing: 0.025em;
 }
 
 .project__links {
@@ -410,7 +481,8 @@ ul {
 
 .project-link {
     display: inline-block;
-    margin-right: 16px;
+    margin-right: 1rem;
+    font-size: 0.9375rem;
     font-weight: 600;
 }
 
@@ -425,13 +497,15 @@ ul {
 
 .skills__title {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .skills__subtitle {
     text-align: center;
     color: #666;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    font-size: 1.0625rem;
+    font-weight: 400;
 }
 
 .skills__list {
@@ -439,18 +513,20 @@ ul {
 }
 
 .skill {
-    margin-bottom: 32px;
+    margin-bottom: 3rem;
 }
 
 .skill__name {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     color: #1a1a1a;
+    font-size: 1.0625rem;
+    font-weight: 600;
 }
 
 .skill__bar {
     background-color: #e0e0e0;
     height: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     position: relative;
 }
 
@@ -476,27 +552,30 @@ ul {
 
 .skill__percentage {
     color: #666;
-    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .learning {
     background-color: #f8f9fa;
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .learning__title {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: #1a1a1a;
+    font-size: 1.25rem;
 }
 
 .learning__list {
     list-style: disc;
-    margin-left: 24px;
+    margin-left: 1.5rem;
 }
 
 .learning__item {
     color: #666;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
 .contact {
@@ -511,35 +590,40 @@ ul {
 }
 
 .contact__title {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .contact__description {
     color: #666;
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.0625rem;
+    line-height: 1.7;
 }
 
 .contact__methods {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 
 .contact__method {
     display: inline-block;
-    margin: 0 32px 32px;
+    margin: 0 2rem 2rem;
     text-align: center;
 }
 
 .contact__method--title {
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
     color: #1a1a1a;
+    font-weight: 600;
 }
 
 .contact__link {
-    font-weight: 600;
+    color: #dd4eca;
+    font-weight: 500;
+    font-size: 0.9375rem;
 }
 
 .footer {
@@ -556,13 +640,15 @@ ul {
 }
 
 .footer__nav {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .footer__link {
     color: #fff;
-    margin: 0 16px;
+    margin: 0 1rem;
     display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 400;
 }
 
 .footer__link:hover {
@@ -572,5 +658,12 @@ ul {
 
 .footer__copyright {
     color: #9ca3af;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.footer__credits {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    line-height: 1.5;
 }
