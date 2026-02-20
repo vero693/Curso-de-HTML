@@ -142,6 +142,7 @@ ul {
 .nav__link {
     padding: 8px 12px;
     display: inline-block;
+    color: #666;
     font-weight: 500;
     font-size: 0.9375rem;
     letter-spacing: 0.01em;
